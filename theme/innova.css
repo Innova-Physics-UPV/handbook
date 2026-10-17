@@ -218,7 +218,8 @@ body {
 }
 
 /* ── The top bar: mdBook's own, with a plain "Innova Physics UPV" ───── */
-/* theme/innova.js turns the title into that name, linked to the website. */
+/* theme/innova.js turns the title into that name, linked to the website,
+   and adds a "Website" button before mdBook's own buttons. */
 .menu-title {
   font-weight: 400;
   font-size: 1.9rem;
@@ -232,6 +233,29 @@ body {
 
 .menu-title a:hover,
 .menu-title a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* The "Website" button: a label in Fragment Mono capitals, in the colour of
+   mdBook's own buttons. */
+.innova-home {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 10px;
+  color: var(--icons);
+  font-family: var(--mono-font);
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.innova-home:hover,
+.innova-home:focus-visible {
+  color: var(--icons-hover);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
