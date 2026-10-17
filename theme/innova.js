@@ -10,6 +10,18 @@
     title.replaceChildren(link);
   }
 
+  // A "Website" button before mdBook's own buttons (print, the repository,
+  // suggest an edit).
+  const buttons = document.querySelector('#mdbook-menu-bar .right-buttons');
+  if (buttons && !buttons.querySelector('.innova-home')) {
+    const home = document.createElement('a');
+    home.className = 'innova-home';
+    home.href = 'https://innova-physics-upv.github.io/';
+    home.title = 'Innova Physics UPV, the website';
+    home.textContent = 'Website';
+    buttons.prepend(home);
+  }
+
   // mdBook 0.5's sidebar toggle is a <label> carrying button attributes,
   // which a label may not have, and the keyboard cannot reach it. Make it a
   // button for assistive technology and the keyboard: Enter and Space press
