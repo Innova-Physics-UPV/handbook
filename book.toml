@@ -1,0 +1,13 @@
+[book]
+title = "Innova Physics UPV Handbook"
+authors = ["Innova Physics UPV"]
+language = "en"
+description = "What Innova Physics UPV builds, how the team is organised and how it works. Edition 2026-27."
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+# Uncomment once the repository exists. A repository named `handbook` in the
+# organisation is served by GitHub Pages at /handbook/.
+# git-repository-url = "https://github.com/innova-physics-upv/handbook"
+# site-url = "/handbook/"
