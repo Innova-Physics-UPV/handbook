@@ -5,10 +5,10 @@
 The team is directed by three people.
 
 - The **Tutor**, a member of the UPV's teaching staff, holds final authority on safety, on relations with the university and on any decision with legal or institutional weight. The Tutor also gives the team continuity across student generations.
-- The **Coordinator** is responsible for the team as a whole: its programme, its external relations, the annual proposal to Generación Espontánea and this handbook.
-- The **Co-Lead** shares the coordination and the technical programme with the Coordinator and deputises for them.
+- The **Team Lead** is responsible for the team as a whole: its programme, its external relations, the annual proposal to Generación Espontánea and this handbook.
+- The **Co-Lead** shares the coordination and the technical programme with the Team Lead and deputises for them.
 
-The Tutor appoints the Coordinator and the Co-Lead for each season.
+The Tutor appoints the Team Lead and the Co-Lead for each season.
 
 ## Departments
 
@@ -24,7 +24,7 @@ Some functions continue through the year whatever the deliverables: safety, docu
 
 ## Handover
 
-Every role changes hands with overlap. In the second semester, each department lead chooses a shadower, who takes over the role the following season. Each Coordinator trains a Co-Lead for a full season before leaving.
+Every role changes hands with overlap. In the second semester, each department lead chooses a shadower, who takes over the role the following season. Each Team Lead trains a Co-Lead for a full season before leaving.
 
 ## Membership levels
 

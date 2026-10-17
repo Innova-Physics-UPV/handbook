@@ -12,7 +12,7 @@ We take decisions close to the work, write them down where the work is, and esca
 | Safety rules and authorisations | The Tutor | The safety documentation |
 | Budget, purchases, sponsors and external relations | Direction | Direction's records |
 | Admission of members and selection of department leads | Direction | Direction's records |
-| The next season's Coordinator and Co-Lead | The Tutor | Direction's records |
+| The next season's Team Lead and Co-Lead | The Tutor | Direction's records |
 
 ## Reversible and irreversible decisions
 
@@ -24,7 +24,7 @@ A proposal posted where the work is discussed stands if nobody objects within th
 
 ## Escalation
 
-When a task team cannot agree, its convener takes the question to the Coordinator. Questions of safety or of institutional weight go to the Tutor, whose decision is final.
+When a task team cannot agree, its convener takes the question to the Team Lead. Questions of safety or of institutional weight go to the Tutor, whose decision is final.
 
 ## The plan and the record
 

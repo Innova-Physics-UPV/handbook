@@ -12,13 +12,13 @@
 
 **UPV Accelerator Challenge.** Our yearly event for UPV students: workshops by the team and presentations by the participants.
 
-**Direction.** The Tutor, the Coordinator and the Co-Lead.
+**Direction.** The Tutor, the Team Lead and the Co-Lead.
 
-**Tutor.** The member of UPV teaching staff who holds final authority on safety and on institutional matters, and who appoints the Coordinator and the Co-Lead.
+**Tutor.** The member of UPV teaching staff who holds final authority on safety and on institutional matters, and who appoints the Team Lead and the Co-Lead.
 
-**Coordinator.** The student responsible for the team as a whole.
+**Team Lead.** The student responsible for the team as a whole.
 
-**Co-Lead.** The student who shares the coordination with the Coordinator and deputises for them.
+**Co-Lead.** The student who shares the coordination with the Team Lead and deputises for them.
 
 **Department.** One of the four groups in which members learn and qualify: Applied Physics, Electronics and Control, Technical Design, and Communication.
 
@@ -48,7 +48,7 @@
 
 **Laboratory logbook.** The internal record of every operation of laboratory equipment.
 
-**Logbook.** The series on our website in which we write up our work for the public.
+**Research.** The section of our website where we publish our work for the public: papers, posters and write-ups.
 
 **Cold test.** A low-power radiofrequency measurement of an accelerating cavity, made without beam.
 

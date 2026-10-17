@@ -10,7 +10,7 @@ We keep our collaboration tools few and give each one a single purpose.
 
 Formal documents are written in LaTeX with the team's class, on Overleaf, and kept in a repository of our GitHub organisation. References come from a shared Zotero library, so that every document cites from the same source. Simulation runs on the team's workstations, which are used on site.
 
-The laboratory logbook records every operation of laboratory equipment. It is separate from the Logbook series on our website, where we write up our work for the public.
+The laboratory logbook records every operation of laboratory equipment. It is separate from the Research section of our website, where we publish our work for the public.
 
 Passwords and other credentials are never written in any of these tools. Direction grants access to each tool according to membership level and withdraws it when a participant leaves.
 
