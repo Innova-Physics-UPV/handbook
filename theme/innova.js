@@ -1,14 +1,13 @@
 (() => {
-  // A link back to the website in the top bar, before mdBook's own buttons
-  // (print, the repository, suggest an edit).
-  const buttons = document.querySelector('#mdbook-menu-bar .right-buttons');
-  if (buttons && !buttons.querySelector('.innova-home')) {
+  // The top bar's title: a plain "Innova Physics UPV", linked to the website.
+  // Without JavaScript it stays the book's title.
+  const title = document.querySelector('#mdbook-menu-bar .menu-title');
+  if (title && !title.querySelector('a')) {
     const link = document.createElement('a');
-    link.className = 'innova-home';
     link.href = 'https://innova-physics-upv.github.io/';
     link.title = 'Innova Physics UPV, the website';
-    link.textContent = 'Website';
-    buttons.prepend(link);
+    link.textContent = 'Innova Physics UPV';
+    title.replaceChildren(link);
   }
 
   // mdBook 0.5's sidebar toggle is a <label> carrying button attributes,
