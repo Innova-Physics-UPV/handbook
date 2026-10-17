@@ -1,0 +1,274 @@
+/* The handbook in the website's identity ("Fingerprint & Pentimento", the
+   tokens in the website's src/styles/tokens.css): gesso and bone black by
+   day, the night paper by night, ultramarine links and an ultramarine top
+   bar like the website's masthead. It overrides mdBook 0.5's own variables
+   and a few of its rules; mdBook's templates are untouched. */
+
+:root {
+  --mono-font: 'Fragment Mono', 'TeX Gyre Heros', monospace;
+  --code-font-size: 0.9em;
+  --content-max-width: 720px;
+  --menu-bar-height: 56px;
+}
+
+/* Day: gesso and bone black (the Light and Rust themes, and no JavaScript). */
+.light,
+html:not(.js),
+.rust {
+  --bg: #eeeae1;
+  --fg: #1c1b19;
+
+  --sidebar-bg: #eeeae1;
+  --sidebar-fg: #1c1b19;
+  --sidebar-non-existant: #a8a296;
+  --sidebar-active: #2338a8;
+  --sidebar-spacer: #d9d3c6;
+
+  --scrollbar: #a8a296;
+
+  --icons: #66615a;
+  --icons-hover: #1c1b19;
+
+  --links: #2338a8;
+
+  --inline-code-color: #1c1b19;
+
+  --theme-popup-bg: #f4f1ea;
+  --theme-popup-border: #d9d3c6;
+  --theme-hover: #d9d3c6;
+
+  --quote-bg: transparent;
+  --quote-border: #1c1b19;
+
+  --warning-border: #d4391f;
+
+  --table-border-color: #d9d3c6;
+  --table-header-bg: #d9d3c6;
+  --table-alternate-bg: #f4f1ea;
+
+  --searchbar-border-color: #a8a296;
+  --searchbar-bg: #ffffff;
+  --searchbar-fg: #1c1b19;
+  --searchbar-shadow-color: #c9cfee;
+  --searchresults-header-fg: #66615a;
+  --searchresults-border-color: #d9d3c6;
+  --searchresults-li-bg: #ffffff;
+  --search-mark-bg: #c9cfee;
+
+  --color-scheme: light;
+
+  --footnote-highlight: #c9cfee;
+  --overlay-bg: rgba(28, 27, 25, 0.3);
+
+  --blockquote-note-color: #2338a8;
+  --blockquote-tip-color: #2f8576;
+  --blockquote-important-color: #2338a8;
+  --blockquote-warning-color: #c4943a;
+  --blockquote-caution-color: #d4391f;
+
+  --sidebar-header-border-color: #2338a8;
+}
+
+/* Night: the website's night paper (the Navy, Coal and Ayu themes). */
+.navy,
+.coal,
+.ayu {
+  --bg: #111932;
+  --fg: #eeeae1;
+
+  --sidebar-bg: #111932;
+  --sidebar-fg: #eeeae1;
+  --sidebar-non-existant: #939dbe;
+  --sidebar-active: #c9cfee;
+  --sidebar-spacer: #233056;
+
+  --scrollbar: #939dbe;
+
+  --icons: #939dbe;
+  --icons-hover: #eeeae1;
+
+  --links: #c9cfee;
+
+  --inline-code-color: #eeeae1;
+
+  --theme-popup-bg: #111932;
+  --theme-popup-border: #233056;
+  --theme-hover: #233056;
+
+  --quote-bg: transparent;
+  --quote-border: #eeeae1;
+
+  --warning-border: #e0634b;
+
+  --table-border-color: #233056;
+  --table-header-bg: #233056;
+  --table-alternate-bg: rgba(35, 48, 86, 0.4);
+
+  --searchbar-border-color: #939dbe;
+  --searchbar-bg: #233056;
+  --searchbar-fg: #eeeae1;
+  --searchbar-shadow-color: #3a4fb5;
+  --searchresults-header-fg: #939dbe;
+  --searchresults-border-color: #233056;
+  --searchresults-li-bg: #233056;
+  --search-mark-bg: #3a4fb5;
+
+  --color-scheme: dark;
+
+  --footnote-highlight: #3a4fb5;
+  --overlay-bg: rgba(17, 25, 50, 0.5);
+
+  --blockquote-note-color: #c9cfee;
+  --blockquote-tip-color: #6fc2b3;
+  --blockquote-important-color: #c9cfee;
+  --blockquote-warning-color: #e5c07b;
+  --blockquote-caution-color: #e0634b;
+
+  --sidebar-header-border-color: #c9cfee;
+}
+
+/* ── Type: TeX Gyre Heros, Fragment Mono for code and labels ───────── */
+html {
+  font-family: 'TeX Gyre Heros', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-size: 1.7rem;
+}
+
+.content p,
+.content ol,
+.content ul {
+  line-height: 1.6em;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.content h1 {
+  font-size: 3.4rem;
+}
+
+.content h2 {
+  font-size: 2.3rem;
+}
+
+.content h3 {
+  font-size: 1.9rem;
+}
+
+/* Links as on the website: the figure colour, underlined with a 2px rule
+   that thickens to 4px. */
+.content a,
+.content a:visited {
+  color: var(--links);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.content a:hover {
+  text-decoration-thickness: 4px;
+}
+
+/* The art voice: quotations in EB Garamond italic. */
+.content blockquote {
+  margin: 2em 0;
+  padding: 0 0 0 20px;
+  border: 0;
+  border-inline-start: 2px solid var(--quote-border);
+  background: none;
+  font-family: 'EB Garamond', Garamond, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 2.1rem;
+  line-height: 1.4;
+}
+
+.content blockquote p {
+  line-height: 1.4em;
+}
+
+/* Tables: labels in Fragment Mono capitals, hairlines between rows. */
+.content table thead th,
+.content table thead td {
+  font-family: var(--mono-font);
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.content table td,
+.content table th {
+  padding: 8px 12px;
+}
+
+/* ── The sidebar: on the page, behind a hairline ───────────────────── */
+.sidebar {
+  border-inline-end: 2px solid var(--sidebar-spacer);
+}
+
+.chapter li a.active {
+  font-weight: 700;
+}
+
+/* ── The top bar: the website's ultramarine masthead ───────────────── */
+#mdbook-menu-bar {
+  --icons: #c9cfee;
+  --icons-hover: #ffffff;
+  background-color: #2338a8;
+  color: #f4f1ea;
+  border-block-end: 2px solid #3a4fb5;
+}
+
+#mdbook-menu-bar.bordered {
+  border-block-end-color: #3a4fb5;
+}
+
+.menu-title {
+  color: #f4f1ea;
+  font-family: 'TeX Gyre Heros Cn', 'TeX Gyre Heros', 'Arial Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+/* The link back to the website (theme/innova.js). */
+.innova-home {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 10px;
+  color: #f4f1ea;
+  font-family: var(--mono-font);
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.innova-home:hover,
+.innova-home:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* On a phone the bar keeps its buttons and the title gives way. */
+@media (max-width: 600px) {
+  .menu-title {
+    font-size: 1.7rem;
+  }
+
+  .innova-home {
+    padding: 0 6px;
+  }
+}

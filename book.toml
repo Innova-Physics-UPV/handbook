@@ -7,7 +7,12 @@ description = "What Innova Physics UPV builds, how the team is organised and how
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-# Uncomment once the repository exists. A repository named `handbook` in the
-# organisation is served by GitHub Pages at /handbook/.
-# git-repository-url = "https://github.com/innova-physics-upv/handbook"
-# site-url = "/handbook/"
+# A repository named `handbook` in the organisation is served by GitHub Pages
+# at /handbook/, under the website's address.
+site-url = "/handbook/"
+git-repository-url = "https://github.com/Innova-Physics-UPV/handbook"
+edit-url-template = "https://github.com/Innova-Physics-UPV/handbook/edit/main/{path}"
+# The website's identity: its fonts (theme/fonts/), colours and top bar
+# (theme/innova.css), and a link back to it (theme/innova.js).
+additional-css = ["theme/innova.css"]
+additional-js = ["theme/innova.js"]

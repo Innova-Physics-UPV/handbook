@@ -1,0 +1,52 @@
+/* The website's typefaces, self-hosted beside their licences: TeX Gyre Heros
+   (GUST Font License), EB Garamond and Fragment Mono (SIL Open Font License).
+   mdBook uses this file instead of its own fonts. Each URL goes through
+   mdBook's resource helper, which adds the file's content hash. */
+
+@font-face {
+  font-family: 'TeX Gyre Heros';
+  src: url('{{ resource "fonts/texgyreheros-regular.woff2" }}') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TeX Gyre Heros';
+  src: url('{{ resource "fonts/texgyreheros-bold.woff2" }}') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TeX Gyre Heros Cn';
+  src: url('{{ resource "fonts/texgyreheroscn-bold.woff2" }}') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('{{ resource "fonts/eb-garamond-latin-400-normal.woff2" }}') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('{{ resource "fonts/eb-garamond-latin-400-italic.woff2" }}') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fragment Mono';
+  src: url('{{ resource "fonts/fragment-mono-latin-400-normal.woff2" }}') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
