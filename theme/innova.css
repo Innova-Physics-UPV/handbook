@@ -1,14 +1,13 @@
 /* The handbook in the website's identity ("Fingerprint & Pentimento", the
    tokens in the website's src/styles/tokens.css): gesso and bone black by
-   day, the night paper by night, ultramarine links and an ultramarine top
-   bar like the website's masthead. It overrides mdBook 0.5's own variables
-   and a few of its rules; mdBook's templates are untouched. */
+   day, the night paper by night, and ultramarine links. The top bar stays
+   mdBook's own. It overrides mdBook 0.5's own variables and a few of its
+   rules; mdBook's templates are untouched. */
 
 :root {
   --mono-font: 'Fragment Mono', 'TeX Gyre Heros', monospace;
   --code-font-size: 0.9em;
   --content-max-width: 720px;
-  --menu-bar-height: 56px;
 }
 
 /* Day: gesso and bone black (the Light and Rust themes, and no JavaScript). */
@@ -218,57 +217,22 @@ body {
   font-weight: 700;
 }
 
-/* ── The top bar: the website's ultramarine masthead ───────────────── */
-#mdbook-menu-bar {
-  --icons: #c9cfee;
-  --icons-hover: #ffffff;
-  background-color: #2338a8;
-  color: #f4f1ea;
-  border-block-end: 2px solid #3a4fb5;
-}
-
-#mdbook-menu-bar.bordered {
-  border-block-end-color: #3a4fb5;
-}
-
+/* ── The top bar: mdBook's own, with a plain "Innova Physics UPV" ───── */
+/* theme/innova.js turns the title into that name, linked to the website. */
 .menu-title {
-  color: #f4f1ea;
-  font-family: 'TeX Gyre Heros Cn', 'TeX Gyre Heros', 'Arial Narrow', sans-serif;
-  font-weight: 700;
-  font-size: 2.2rem;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.9rem;
 }
 
-/* The link back to the website (theme/innova.js). */
-.innova-home {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0 10px;
-  color: #f4f1ea;
-  font-family: var(--mono-font);
-  font-size: 1.3rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.menu-title a,
+.menu-title a:visited {
+  color: var(--fg);
   text-decoration: none;
 }
 
-.innova-home:hover,
-.innova-home:focus-visible {
-  color: #ffffff;
+.menu-title a:hover,
+.menu-title a:focus-visible {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-}
-
-/* On a phone the bar keeps its buttons and the title gives way. */
-@media (max-width: 600px) {
-  .menu-title {
-    font-size: 1.7rem;
-  }
-
-  .innova-home {
-    padding: 0 6px;
-  }
 }
