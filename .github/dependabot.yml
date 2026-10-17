@@ -1,0 +1,17 @@
+# Dependabot proposes updates to the workflow's actions (and moves their
+# pinned commits) every Monday, as one grouped pull request, after a few
+# days' cooldown. mdBook itself is not tracked: see the workflow's comment.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Madrid
+    cooldown:
+      default-days: 3
+    groups:
+      actions:
+        patterns: ["*"]

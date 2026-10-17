@@ -1,6 +1,6 @@
 # Innova Physics UPV Handbook
 
-Source of the team handbook, built with [mdBook](https://github.com/rust-lang/mdBook) and published with GitHub Pages.
+Source of the team handbook, built with [mdBook](https://github.com/rust-lang/mdBook) and published with GitHub Pages at https://innova-physics-upv.github.io/handbook/.
 
 **Edition 2026-27, version 1.0.**
 
@@ -13,7 +13,13 @@ Install mdBook 0.5.4 (a single binary from its releases page), then:
 
 ## Publish
 
-The workflow in `.github/workflows/deploy.yml` builds every pull request and deploys `main` to GitHub Pages. In the repository settings, set **Pages > Source** to **GitHub Actions**, then uncomment `site-url` and `git-repository-url` in `book.toml`.
+The workflow in `.github/workflows/deploy.yml` checks and builds every pull request and deploys `main` to GitHub Pages (Settings › Pages › Source: GitHub Actions). A repository named `handbook` in the organisation is served at `/handbook/`, under the website's address.
+
+The workflow's actions are pinned to release commits, and Dependabot proposes their updates. mdBook is downloaded and checked against its SHA-256 before it runs: to move to a new mdBook, change `MDBOOK_VERSION` and `MDBOOK_SHA256` in the workflow together, with the digest of the `x86_64-unknown-linux-musl` archive on mdBook's release page, and build it locally first.
+
+## Look
+
+`theme/` gives the book the website's identity without copying mdBook's templates: its fonts (`theme/fonts/`, with their licences), colours and top bar (`theme/innova.css`, from the website's design tokens), and a link back to the website (`theme/innova.js`).
 
 ## Editing in one file
 
